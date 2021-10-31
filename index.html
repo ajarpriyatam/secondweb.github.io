@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint:Priyatm ajar</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .main{
+        background: rgba(0,0,0,0.7)url(bg.jpg);
+        background-size: cover;
+        background-attachment: fixed ;
+        background-blend-mode: darken ;
+        height: 125vh;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        font-size: 35px;
+        color: #fff;
+        position: absolute;
+        top: 40px;
+        font-weight: bold;
+        left: 45px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .logo span,.content span{
+        color: #39b14a;
+    }
+    .menu{
+        position: fixed;
+        top: 40px;
+        display: flex;
+        right: 60px;
+        height: 30px;
+        padding: 5px 0px 0px 20px;
+        background: black;
+        width: 100px;
+    }
+    .menu1{
+        color: #39b14a;
+        margin-top: 2px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 15px;
+    }
+    .line{
+        width: 25px;
+        cursor: pointer;
+        height: 2px;
+        border: 1px solid white;
+        background-color: #fff;
+        margin-top: 3px;
+    }
+    header{
+        padding-top: 100px;
+        display: flex;
+    }
+    header .content{
+        width: 800px;
+        margin-top: 150px;
+        margin-left: 150px;
+    }
+    header .content h4{
+        font-size: 18px;
+        color: #ffffff80;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
+    }
+    header .content h1{
+        font-size: 60px;
+        color: #fff;
+        letter-spacing: 1.5px;
+        margin-bottom: 90px;
+    }
+    header .content .group{
+        display: flex;
+    }
+    header .content .btn{
+        width: 254px;
+        color: #fff;
+        height: 54px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-right: 25px;
+        background: none;
+        border: 2px solid  #fff;
+    }
+    /* header .content .btn::before{
+        content: "";
+        margin-right: 25px;
+        background: #39b14a;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+    header .content .btn::before{
+        width: 0%;
+        height: 100%;
+    }
+    header .content .btn:hover:before{
+        width: 100%;
+    } */
+    header .content1{
+        margin-top: 150px;
+        padding-top: 90px;
+        width: 200px;
+        margin-left: 400px;
+    }
+    header .content1 div{
+        display: flex;
+    }
+    header .content1 span{
+        color: #39b14a;
+        width: 70px;
+        text-align: right;
+        display: none;
+        margin-top: 7px;
+    }
+    header .content1 a{
+        display: flex;
+        margin-bottom: 15px;
+        text-decoration: none;
+        border: 2px solid #39b14a;
+        width: 35px;
+        height: 35px;
+        margin-left: 85px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        flex-direction: column;
+    }
+    header .content1 i{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    nav{
+        background: #0c0c0c;
+        width: 250px;
+        padding: 36px 30px 36px 36px;
+        height: 90vh;
+        position: fixed;
+        top: 0%;
+        left: 100%;
+        transition: 1s;
+        /* display: none; */
+    }
+    nav h6{
+        color: #39b14a;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    nav span{
+        color: #fff;
+        font-size: 15px;
+        margin-left: 100px;
+        cursor: pointer;
+    }
+    ul{
+        list-style: none;
+        margin-top: 45px;
+    }
+    ul li{
+        margin-top: 20px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    nav p,.content2 i{
+        color: #ffffff40;
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    header .content1 a:hover{
+        border: 2px solid white;
+        /* margin-left: 8px; */
+    }
+    header .content1 a:hover i{
+        color: #39b14a;
+    }
+    /* header .content1 i:hover span{
+        display: block;
+        color: #fff;
+    } */
+    header .content .btn:hover{
+        background: #fff;
+        color: black;
+    }
+    ul li a:hover{
+        color: #39b14a;
+    }
+    section{
+        background: #39b14a;
+    }
+    section h4,.container h4,.container1 h4,.container2 h4,.container3 h4{
+        font-size: 17px;
+        padding-top: 150px;
+        margin: auto;
+        width: 150px;
+        text-align: center;
+    }
+    section h4{
+        padding-top: 0px;
+    }
+    section h1,.container h1,.container1 h1,.container2 h1,.container3 h1{
+        text-align: center;
+        font-size: 78px;
+    
+        width: 600px;
+        margin: auto;
+        border-bottom: 0.1px solid white;
+        color: #fff;
+        padding-bottom: 40px;
+    }
+    section p{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 24px;
+        width: 1120px;
+        margin: auto;
+    }
+    section .block{
+        display: flex;
+        width: 1000px;
+        padding-bottom: 200px;
+        margin: auto;
+    }
+    section .block .block1{
+        width: 300px;
+        margin-top: 80px;
+        border-right: 1px solid white;
+    }
+    section .block .block2{
+        width: 300px;
+        margin-top: 80px;
+    }
+    section .block .block1 h2,section .block .block2 h2{
+        color: #fff;
+        text-align: center;
+        font-size: 70px;
+    }
+    section .block .block1 h3,section .block .block2 h3{
+        text-align: center;
+    }
+    #arrow{
+        position: fixed;
+        display:none;
+        top: 90%;
+        left: 93%;
+        transition: ease-in 1s;
+        width: 60px;
+        transition: 1s;
+        cursor: pointer;
+        height: 60px;
+        background:#000;
+        justify-content: center;
+        border: none;
+        align-items: center;
+    }
+    #arrow i{
+        color: gray;
+        font-size: 17px;
+        text-align: center;
+    }
+    .box1,.box2{
+        width: 140px;
+        z-index: 0;
+        height: 102px;
+        border-right: 2px solid #39b14a;
+        margin-top: 42px;
+        margin-left: 1300px;
+        
+    }
+    .box1 #btn1 i{
+        cursor: pointer;
+        color: #39b14a;
+    }
+    .box2{
+        top: 125%;
+        margin-top: 0px;
+        left: 86%;
+        border-right: 2px solid #fff;
+    }
+    .container{
+        height: 1200px;
+    }
+    .container h4,.container2 h4{
+        color: #39b14a;
+    }
+    .container h1,.container2 h1,.container3 h1{
+        color: black;
+        font-size: 50px;
+        width: 900px;
+        letter-spacing: 0.5px;
+        margin-left: 20%;
+    }
+    
+    .container .block{
+        width: 1200px;
+        margin: auto;
+    }
+    .container .block .block1{
+        display: flex;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .container .block .block1 .block2,.container .block .block1 .block3{
+        width: 528px;
+    }
+    .container .block .block1 .block3{
+        margin-left: 8%;
+    }
+    .container  .heading{
+        display: flex;
+    }
+    .container .block h3{
+        font-size: 32px;
+        margin-left:20px ;
+    }
+    .container .block i{
+        font-size: 30px;
+        margin-top: 8px;
+        color: #39b14a;
+    }
+    .container .block p{
+        font-size: 17px;
+        margin-left:47px ;
+        margin-top: 15px;
+        color: #757575;
+        line-height: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .box1 #btn1{
+        font-size: 12px;
+        letter-spacing: 1px;
+        border: none;
+        color: #fff;
+        background: none;
+        font-weight: 600;
+    }
+    hr{
+        width: 500px;
+        margin-left:510px ;
+    }
+    .container2{
+        background: linear-gradient(#000 20%,#fff 100%);
+        height: 2440px;
+    }
+    .container2 h1{
+        color: #fff;
+    }
+    .container2 .collection{
+        display: flex;
+        margin: auto;
+        width: 1120px;
+        margin-top: 100px;
+    }
+    
+    .container2 #img7,.container2 #img9,.container2 #img12,.container2 #img10{
+        width: 560px;
+        height: 562px;
+    }
+    .container2 #img9,#img11,#img10,#img12{
+        margin-top: -5px;
+        height: 570px;
+    }
+    .container2 #img12{
+        height: 570px;
+    }
+    .container2 #img8,.container2 #img11{
+        width: 560px;
+        height: 700px;
+    }
+    .container2 #img7{
+        padding-top: -500px;
+    }
+    .container3{
+        height: 1540px;
+        background: #e6e6e6;
+    }
+    .container3 h4{
+        color: #39b14a;
+        padding-top: 162px;
+    }
+    .container3 h1{
+        border-bottom: 1px solid rgb(202, 202, 202);
+    }
+    .container3 .slide{
+        width: 1150px;
+        margin: auto;
+        margin-top: 80px;
+        height: 250px;
+    }
+    .container3 .slide .slide1{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .container3 .slide2{
+        margin: auto;
+        display: flex;
+        transition: 0.5s;
+        width: 2530px;
+    }
+    .container3 img{
+        width: 170px;
+        height: 150px;
+        padding: 25px 30px;
+    }
+    .indicator{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 92;
+        z-index: 1;
+    }
+    .btn4{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin: 20px;
+        border-radius:50%;
+        background: #959595;
+        cursor: pointer;
+        transition: 1s;
+        margin-left: 2px;
+    }
+    .active{
+        background: #39b14a;
+    }
+    .container3 .slider{
+        width: 1000px;
+        height: 550px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .container3 .slider .slider1{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .container3 .slider .slider1 .slider2{
+        display: flex;
+        width: 3000px;
+        height: 100%;
+        transition: 1s;
+    }
+    .container3 p{
+        font-size: 35px;
+        text-align: center;
+        color: #5d5c5c;
+        margin-top: 100px;
+    }
+    .container3 .photo{
+        margin: auto;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .container3 .photo img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    .container3 .photo p{
+        font-size: 18px;
+        margin: auto;
+        color: black;
+        width: 100px;
+    }
+    #btn5,#btn7{
+        position: relative;
+        top: -55%;
+        left: -8.5%;
+        border: none;
+    }
+    #btn7{
+        left: -8.5%;
+        display: none;
+    }
+    #btn5 i,#btn6 i,#btn7 i,#btn8 i{
+        font-size: 30px;
+        background: none;
+        cursor: pointer;
+    }
+    #btn6,#btn8{
+        position: relative;
+        top: -60%;
+        border: none;
+        left: 103%;
+    }
+    #btn8{
+        left: 103%;
+        /* top: -55%; */
+    }
+    #btn6{
+        display: none;
+        /* top: 55%; */
+    }
+    .container3 .box1{
+        margin-left: 615px;
+    }
+    .container1{
+        background:#151515;
+        height: 1150px;
+    }
+    .container1 .box1{
+        margin-left: 615px;
+        margin-top: 0px;
+    }
+    .container1 h4{
+        color: #39b14a;
+        padding-top: 50px;
+    }
+    .container1 h1{
+        color: fff;
+        font-size: 50px;
+        width: 900px;
+        letter-spacing: 0.5px;
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+    .container1 .contain{
+        width: 1050px;
+        margin: auto;
+        display: flex;
+        height: 722px;
+        background: #111111;
+    }
+    .container1 .contain1{
+        width: 650px;
+        height: 722px;
+        margin-left: 60px;
+    }
+    .container1 .contain2{
+        width: 350px;
+        background: #111;
+        padding-left: 50px;
+        /* margin-left: 0px; */
+        height: 722px;
+    }
+    .container1 h6{
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin:  50px 0 40px;
+    }
+    .container1 .contain2 h6{
+        margin-bottom: 68px;
+    }
+    .container1 #name,#email,#subject,#text,#btn3{
+        width: 550px;
+        height: 60px;
+        background: none;
+        outline: none;
+        color: #39b14a;
+        font-size: 16px;
+        padding: 5px 10px;
+        font-weight: 100;
+        display: inline;
+        border: none;
+        border-bottom: 0.1px solid rgba(225,225,225,0.07);
+    }
+    .container1 #text{
+        height: 250px;
+        padding-top: 20px;
+    }
+    .container1 #btn3{
+        background: #39b14a;
+        border: none;
+        height: 54px;
+        margin-top: 35px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-left:8px ;
+    }
+    .contain2 h5{
+        color: #39b14a;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 550;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+    .contain2 p{
+        color: #ffffff66;
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 30px;
+        /* font-weight: 550; */
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .contain2 .content2{
+        margin-top: -70px;
+    }
+    .contain2 .content2 a i{
+        color: #fff;
+        font-size: 20px;
+    }
+    .contain2 .content2 a i:hover{
+        color: #39b14a;
+    }
+    footer{
+        background: #111;
+        display: flex;
+        padding: 9rem 0 0 6rem;
+    }
+    .section1{
+        margin-left: 170px;
+        margin-right:100px ;
+        width: 430px;
+        height: 350px;
+    }
+    .section1 h3{
+        font-size: 30px;
+        color: #39b14a;
+    }
+    footer p{
+        font-size: 17px;
+        color: rgba(225,225,225,0.3);
+        margin-top: 30px;
+        line-height: 30px;
+    }
+    .section2{
+        width: 480px;
+    }
+    .section2 h6{
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+    }
+    footer .text{
+        margin-top: 30px;
+    }
+    footer #text{
+        width: 250px;
+        height: 54px;
+        background-color: black;
+        padding: 0px 15px;
+        color: #39b14a;
+        font-size: 15px;
+        margin-left: 20px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    footer #btn2{
+        width: 140px;
+        height: 54px;
+        background: #39b14a;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+    }
+    .foot{
+        color: rgba(225,225,225,0.3);
+        height: 80px;
+        background: #111;
+        text-align: center;
+    }
+    .foot span{
+        color: #39b14a;
+    }
+    </style>
+    
+    
+    
+    
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">Glint<span>.</span></div>
+        <div class="menu">
+            <div class="menu1">MENU</div>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <header>
+            <div class="content">
+                <h4>WELCOME TO GLINT</h4>
+                <h1>We are a <span>Creative group</span> of people who design influential brands and digital
+                    experiences.</h1>
+                <div class="group">
+                    <button class="btn">START A PROJECT</button>
+                    <button class="btn">MORE ABOUT US</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div><span>Facebook</span><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div><span>Twitter</span><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div><span>Instagram</span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div><span>Behance</span><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></div>
+                <div><span>Dribble</span><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></div>
+            </div>
+        </header>
+        <div class="box1" id="box1">
+            <button id="btn1"><i class="fa fa-arrow-down"></i> SCROLL DOWN</button>
+        </div>
+    </div>
+    <nav id="nav">
+        <h6>NAVIGATION<span id="cross" class="fa fa-times" aria-hidden="true"></span></h6>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="services" >Services</a></li>
+            <li><a href="#" id="works">Works</a></li>
+            <li><a href="#" id="client">Client</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis magnam quos minus! Nostrum laboriosam placeat
+            doloremque officiis illo aspernatur a recusandae repudiandae.</p>
+        <div class="content2">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        </div>
+    </nav>
+    <button id="arrow">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <section>
+        <div class="box2" id="box2"></div>
+        <h4>HELLO THERE</h4>
+        <h1>We Are Glint</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veniam reiciendis nemo, consequuntur
+            beatae modi praesentium laborum eligendi aliquid qui neque amet sit, ex dolorem! Magnam placeat atque
+            sapiente labore pariatur? Explicabo, iusto sed aliquid fugiat ab dolore et amet consequatur cum quod quia
+            aspernatur fuga consectetur nesciunt ratione ad laboriosam est, ipsa optio! Qui!</p>
+        <div class="block">
+            <div class="block1">
+                <h2>127</h2>
+                <h3>Awards Received</h3>
+            </div>
+            <div class="block1">
+                <h2>1505</h2>
+                <h3>Cups of Coffee</h3>
+            </div>
+            <div class="block1">
+                <h2>785</h2>
+                <h3>Projects Completed</h3>
+            </div>
+            <div class="block2">
+                <h2>7896</h2>
+                <h3>Happy Clients</h3>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <h4>WHAT WE DO</h4>
+        <h1>We’ve got everything you need to launch and grow your business</h1>
+        <div class="block">
+            <div class="block1">
+                <div class="block2">
+                    <div class="heading">
+                        <h3>Brand Identity</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? Odit! lorem33 lorem33</p>
+                </div>
+                <div class="block3">
+                    <div class="heading">
+                        <h3>Illustration</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? Odit! lorem33</p>
+                </div>
+            </div>
+            <div class="block1">
+                <div class="block2">
+                    <div class="heading">
+                        <h3>Marketing</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? Odit! lorem33</p>
+                </div>
+                <div class="block3">
+                    <div class="heading">
+                        <h3>Web Design</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? Odit! lorem33</p>
+                </div>
+            </div>
+            <div class="block1">
+                <div class="block2">
+                    <div class="heading">
+                        <h3>Packaging Design</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? odit! lorem33</p>
+                </div>
+                <div class="block3">
+                    <div class="heading">
+                        <h3>Web Development</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque laudantium non blanditiis
+                        eveniet impedit nisi et exercitationem, eaque iusto sed quibusdam repellat. Quam nobis
+                        recusandae, debitis quia voluptatibus enim ad ab? odit! lorem33</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h4>RECENT WORKS</h4>
+        <h1>We love what we do, check out some of our latest works</h1>
+        <div class="collection">
+            <div class="collection1">
+                <img id="img7" src="7.PNG" alt="">
+                <img id="img9" src="9.PNG" alt="">
+                <img id="img11" src="11.PNG" alt="">
+            </div>
+            <div class="collection1">
+                <img id="img8" src="8.PNG" alt="">
+                <img id="img10" src="10.PNG" alt="">
+                <img id="img12" src="12.PNG" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <h4>OUR CLIENTS</h4>
+        <h1>Glint has been honored to partner up with these clients</h1>
+        <div class="slide">
+            <div class="slide1">
+                <div class="slide2" id="slide2">
+                    <img id="img" src="logo2.PNG" alt="">
+                    <img id="img" src="logo3.PNG" alt="">
+                    <img id="img" src="logo4.PNG" alt="">
+                    <img id="img" src="logo5.PNG" alt="">
+                    <img id="img" src="logo6.PNG" alt="">
+                    <img id="img" src="logo7.PNG" alt="">
+                    <img id="img" src="logo8.PNG" alt="">
+                    <img id="img" src="logo2.PNG" alt="">
+                    <img id="img" src="logo3.PNG" alt="">
+                    <img id="img" src="logo4.PNG" alt="">
+                    <img id="img" src="logo5.PNG" alt="">
+                </div>
+            </div>
+            <div class="indicator">
+                <span class="btn4 active"></span>
+                <span class="btn4"></span>
+                <span class="btn4"></span>
+                <span class="btn4"></span>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider1">
+                <div class="slider2" id="slider2">
+                    <div class="slider3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, labore repellat iste atque quam iusto modi nulla facilis ducimus quia, ad voluptatem expedita praesentium accusamus, saepe voluptate voluptas.</p>
+                        <div class="photo">
+                            <img src="5.PNG" alt="">
+                            <p>Prince</p>
+                        </div>
+                    </div>
+                    <div class="slider3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, labore repellat iste atque quam iusto modi nulla facilis ducimus quia, ad voluptatem expedita praesentium accusamus, saepe voluptate voluptas.</p>
+                        <div class="photo">
+                            <img src="6.PNG" alt="">
+                            <p>Priyatam</p>
+                        </div>
+                    </div>
+                    <div class="slider3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, labore repellat iste atque quam iusto modi nulla facilis ducimus quia, ad voluptatem expedita praesentium accusamus, saepe voluptate voluptas.</p>
+                        <div class="photo">
+                            <img src="7.PNG" alt="">
+                            <p>ajar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btn5"><i class="fa fa-arrow-left"></i></button>
+            <button id="btn7"><i class="fa fa-arrow-left"></i></button>
+
+            <button id="btn6"><i class="fa fa-arrow-right"></i></button>
+            <button id="btn8"><i class="fa fa-arrow-right"></i></button>
+
+        </div>
+        <div class="box1" id="box1"></div>
+    </div>
+   <div class="container1">
+        <div class="box1" id="box1"></div>
+        <h4>CONTACT US</h4>
+        <h1>Reach out for a new project or just say hello</h1>
+        <div class="contain">
+            <div class="contain1">
+                <h6>SEND US A MESSAGE</h6>
+                <input type="text" name="Name" id="name" placeholder="Your Name">
+                <input type="text" name="Email" id="email" placeholder="Your Email">
+                <input type="text" name="Subject" id="subject" placeholder="Subject">
+                <textarea name="Text" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button id="btn3">SUBMIT</button>
+            </div>
+            <div class="contain2">
+                <h6>CONTACT INFO</h6>
+                <h5>Where to Find Us</h5>
+                <p>1600 Amphitheatre Parkway <br> Mountain View, CA <br> 94043 US</p>
+                <h5>Email Us At</h5>
+                <p>contact@glintsite.com <br> info@glintsite.com</p>
+                <h5>Call Us At</h5>
+                <p>Phone: (+63) 555 1212 <br> Mobile: (+63) 555 0100 <br> Fax: (+63) 555 0101</p>
+                <div class="content2">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer>
+        <div class="section1">
+            <h3>Glint.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti cupiditate facere impedit illum, sequi
+                eligendi error molestias commodi explicabo nemo culpa autem eveniet eos. Veritatis animi temporibus
+                voluptates ea vero sit sed? Mollitia id, dolores temporibus sed, doloremque itaque sint minus repellat
+                molestiae aspernatur atque. lorem45</p>
+        </div>
+        <div class="section2">
+            <h6>Get Notified</h6>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatum vitae aliquid, laborum
+                perspiciatis rerum ad minus corporis temporibus placeat? lorem20 </p>
+            <div class="text">
+                <input type="text" name="Email" id="text" placeholder="Email Address" required>
+                <button id="btn2">SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+    <div class="foot"><p>© Copyright Glint 2022 This Site made by <span>Priyatam</span> Ajar</p></div>
+    
+    <script src="index.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+@media(max-width:451px){
+    .main{
+        height: 105vh;
+        width: 450px;
+    }
+    .content1{
+        display: none;
+    }
+    header .content{
+        width: 340px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    header .content h4{
+        font-size: 15px;
+        text-align: center;
+    }
+    header .content h1{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    header .content .group{
+        display: inline-block;
+        margin-left: 40px;
+    }
+    header .content .btn{
+        margin-top: 20px ;
+    }
+    .menu{
+        right:25px;
+        /* display: none; */
+    }
+    .box1,.box2{
+        display: none;
+    }
+    section{
+        padding-top: 100px;
+    }
+    section h1,.container h1,.container1 h1,.container2 h1,.container3 h1{
+        font-size: 40px;
+        width: 400px;
+    }
+    section p{
+        font-size: 16px;
+        width: 380px;
+    }
+    section .block{
+        width: 300px;
+        margin: auto;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    section .block .block1{
+        width: 300px;
+        margin-top: 20px;
+        border-right: none;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+    section .block .block2{
+        width: 300px;
+        margin-top: 20px;
+    }
+    section{
+        height: 1100px;
+    }
+    #arrow{
+        left: 86%;
+    }
+    .container h1,.container2 h1,.container3 h1{
+        margin-left: 0%;
+        margin: auto;
+        font-size: 33px;
+        width: 350px;
+    }
+    .container .block{
+        width: 400px;
+        margin: auto;
+    }
+    .container .block .block1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .container .block .block1 .block2,.container .block .block1 .block3{
+        width: 400px;
+    }
+    .container .block h3{
+        font-size: 15px;
+        margin-left:20px ;
+    }
+    .container .block i{
+        font-size: 30px;
+        margin-top: 8px;
+        color: #39b14a;
+    }
+    .container .block p{
+        font-size: 17px;
+        margin-left:0px ;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .container .block .block1 .block3{
+        margin-left: 0%;
+        margin-top: 40px;
+    }
+    .container  .heading{
+        display: inline-block;
+        width: 100%;
+    }
+    .container .block h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .container .block i{
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    .container2{
+        height: 3000px;
+        margin-top: 1200px;
+
+    }
+    .container2 .collection{
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .container2 #img7,.container2 #img9,.container2 #img12,.container2 #img10{
+        width: 380px;
+        margin-left: 32px;
+        height: 380px;
+    }
+    .container2 #img9,#img11,#img10,#img12{
+        margin-left: 32px;
+        height: 380px;
+    }
+    .container2 #img8,.container2 #img11{
+        width: 380px;
+        height: 475px;
+        margin-left: 32px;
+    }
+    .container2 .collection1{
+        width: 100%;
+        margin-top: -5px;
+        
+    }
+    .container3{
+        height: 1400px;
+    }
+
+    .container3 .slide{
+        width: 400px;
+        margin: auto;
+        margin-top: 80px;
+        height: 250px;
+    }
+    .container3 img{
+        width: 160px;
+        height: 150px;
+        padding: 25px 18px;
+    }
+    .container3 .slider{
+        width: 400px;
+    }
+    .container3 p{
+        font-size: 20px;
+    }
+    .container3 .slider .slider1 .slider2{
+        width: 1200px;
+    }
+    #btn6,#btn8{
+        top: -55%;
+        left: 90%;
+    }
+    #btn5,#btn7{
+        left: -4%;
+    }
+    .container1{
+        height: 1600px;
+    }
+    .container1 .contain{
+        width: 100%;
+        display: inline-block;
+    }
+    .container1 #name,#email,#subject,#text,#btn3{
+        width: 400px;
+    }
+    .container1 #btn3{
+        margin-left: 0px ;
+        margin-bottom: 100px;
+    }
+    .container1 .contain1{
+        width: 400px;
+        margin: auto;
+        height: 750px;
+    }
+    .container1 .contain2{
+        width: 450px;
+        padding-left: 0px;
+        height: 642px;
+        /* margin: auto; */
+        margin-top: -103px;
+    }
+    .container1 h1{
+        margin: auto;
+        margin-top: 10px;
+        font-size: 33px;
+        width: 400px;
+    }
+    .container1 .contain2 h6{
+        margin-bottom: 68px;
+        display: none;
+    }
+    .contain2 h5{
+        text-align: center;
+        width: 450px;
+    }
+    .contain2 p{
+        width: 450px;
+        text-align: center;
+    }
+    .contain2 .content2{
+        margin-top: -70px;
+        width: 450px;
+        text-align: center;
+        padding-left: -50px;
+    }
+    footer{
+        width: 450px;
+        margin-top: -22px;
+        display: inline-block;
+        padding: 2rem 0 0 0rem;
+
+    }
+    .section1{
+        margin-left: 0px;
+        margin-right:0px ;
+        width: 370px;
+        margin: auto;
+    }
+    .section1 h3{
+        font-size: 25px;
+        width: 370px;
+        text-align: center;
+    }
+    .section2{
+        margin: auto;
+        width: 370px;
+        margin-top: -30px;
+    }
+    .section2 h6{
+        margin-top: 00px;
+        font-size: 16px;
+    }
+    footer .text{
+        margin-top: 30px;
+        width: 370px;
+    }
+    footer #text{
+        width: 340px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    footer #btn2{
+        width: 370px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .foot{
+        color: rgba(225,225,225,0.3);
+        height: 130px;
+        text-align: center;
+        background: #111;
+        text-align: center;
+    }
+    .foot p{
+        width: 300px;
+        margin: auto;
+        padding-top: 40px;
+    }
+}
