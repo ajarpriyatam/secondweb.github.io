@@ -4,7 +4,7 @@
   and (orientation: portrait){
     .main{
         height: 105vh;
-        width: 695px;
+        width: 1000px;
     }
     .content1{
         display: none;
